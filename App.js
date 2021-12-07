@@ -7,9 +7,11 @@ import Styles from './Src/Utility/appStyle';
 
 export default function App() {
   return (
+    
     <NavigationContainer>
       <AppBottomBar/>
     </NavigationContainer>
+    
   );
 }
 

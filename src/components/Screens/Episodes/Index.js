@@ -24,17 +24,18 @@ const EpsiodesScreen = props =>{
     },[])
 
     return(
-        <View style={Styles.container}>
-            <FlatList
+        <View Style={{alignItems:'center'}}>
+            <FlatList 
                 data={data}
                 keyExtractor={item=> item.episode_id}
                 renderItem={episode =>
-                <TouchableOpacity onPress={()=> props.navigation.navigate('EpisodesDetails',{EpisodeDetails:episode.item})}>
-                    
-                    <Text>{episode.item.title}</Text>
-                    <Text>{episode.item.episode}</Text>
-                    <Text>{episode.item.season}</Text>
-                    <Text>{episode.item.air_date}</Text>
+                <TouchableOpacity style={{alignItems: 'center'}} onPress={()=> props.navigation.navigate('EpisodesDetails',{EpisodeDetails:episode.item})}>
+                    <View  style={Styles.episodeView}>
+                    <Text> Title:   {episode.item.title}</Text>
+                    <Text> episode: {episode.item.episode}</Text>
+                    <Text> Season:  {episode.item.season}</Text>
+                    <Text> AirDate: {episode.item.air_date}</Text>
+                    </View>
 
 
                 </TouchableOpacity>

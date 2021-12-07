@@ -54,7 +54,7 @@ export const AppBottomBar = () => {
 
     return(
 
-        <AppBottomBarNavigator.Navigator >
+    <AppBottomBarNavigator.Navigator barStyle={{backgroundColor:'#1F6032'}} activeColor="#F5D784" >
             <AppBottomBarNavigator.Screen
                 name='Characters'
                 component={CharacterStack}
@@ -79,7 +79,7 @@ export const AppBottomBar = () => {
                         tabBarLabel:'Episodes',
                         tabBarIcon:({  }) =>{
                             return(
-                                <MaterialCommunityIcons name= 'persons' color= '#000' size={26} />
+                                <MaterialCommunityIcons name= 'video' color= '#000' size={26} />
                             )
                         }
                         
@@ -96,7 +96,7 @@ export const AppBottomBar = () => {
                          tabBarLabel:'Quotes',
                          tabBarIcon:({  }) =>{
                             return(
-                                <MaterialCommunityIcons name= 'persons' color= '#000' size={26} />
+                                <Fontisto name= 'quote-right' color= '#000' size={26} />
                             )
                         }
                      }

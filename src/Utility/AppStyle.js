@@ -3,9 +3,10 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#1E2C2E',
         alignItems: 'center',
         justifyContent: 'center',
+        
       },
       separator: {
         alignItems: 'center',
@@ -21,6 +22,19 @@ export default StyleSheet.create({
       },
       imageView:{
         width:'25%',
+      },
+      episodeView:{
+        alignItems: 'center',
+        backgroundColor: '#29773E',
+        borderRadius:10,
+        width: '40%',
+        fontStyle:'italic',
+        fontWeight : 'bold' ,
+        margin:50,
+        flexDirection:'row',
+        height:120,
+        justifyContent: 'center',
+        
       } 
       
 });

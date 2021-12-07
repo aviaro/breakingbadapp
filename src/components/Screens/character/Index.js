@@ -78,7 +78,7 @@ const CharacterScreen = props =>{
 export const ScreenOptions = navData => {
 
     return{
-    headerTitle: 'Charcters'
+    headerTitle: 'Characters'
     
     }
 
