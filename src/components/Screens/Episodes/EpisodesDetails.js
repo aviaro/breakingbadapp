@@ -17,14 +17,16 @@ const EpsiodesDetailsScreen = props =>{
         return jumper;
     }
     return(
-        <View style={Styles.container}>
-            <Text> title:{episode.title}</Text>
+        <View style={{alignItems: 'center',backgroundColor:'grey',color:'#FFFFFF'}}>
+        <View style={{fontWeight:'bold',margin:300}}>
+            <Text>title:{episode.title}</Text>
             <Text>episode:{episode.episode}</Text>
             <Text>season:{episode.season}</Text>
-            <Text>character appearances:{chars(episode.characters)}</Text>
+            <View  >
+            <Text>character appearances:   {chars(episode.characters)}</Text>
+            </View>
             
-            
-            
+            </View>
         </View>
     )
 

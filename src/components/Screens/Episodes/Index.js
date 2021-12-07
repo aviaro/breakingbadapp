@@ -24,7 +24,7 @@ const EpsiodesScreen = props =>{
     },[])
 
     return(
-        <View Style={{alignItems:'center'}}>
+        
             <FlatList 
                 data={data}
                 keyExtractor={item=> item.episode_id}
@@ -44,7 +44,7 @@ const EpsiodesScreen = props =>{
             
             
             />
-        </View>
+        
     )
 
 };

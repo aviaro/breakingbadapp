@@ -30,7 +30,7 @@ const QuotesScreen = props =>{
                 data={data}
                 keyExtractor={item => item.quote_id}
                 renderItem={quotes => 
-                    <View>
+                    <View style={{color:'white'}} >
                         <Text>quote:{quotes.item.quote}</Text>
                         <Text>author:{quotes.item.author}</Text>
 

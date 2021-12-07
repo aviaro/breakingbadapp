@@ -28,13 +28,12 @@ export default StyleSheet.create({
         backgroundColor: '#29773E',
         borderRadius:10,
         width: '40%',
-        fontStyle:'italic',
-        fontWeight : 'bold' ,
         margin:50,
         flexDirection:'row',
         height:120,
         justifyContent: 'center',
         
-      } 
+      },
+      
       
 });
